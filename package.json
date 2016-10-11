@@ -15,7 +15,7 @@
   "files": [
     "lib"
   ],
-  "main": "lib/cj.js",
+  "main": "cj.js",
   "dependencies": {
     "underscore": "1.8.3"
   },
