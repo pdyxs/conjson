@@ -5,6 +5,10 @@ import _ from 'underscore';
 import ConJSON from './ConJSON';
 
 class ConJSave extends ConJSON {
+  constructor() {
+    super();
+  }
+
   init() {
     super.init();
     this.updateSaved();

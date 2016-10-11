@@ -2004,7 +2004,7 @@
 	  function ConJSave() {
 	    _classCallCheck(this, ConJSave);
 
-	    return _possibleConstructorReturn(this, (ConJSave.__proto__ || Object.getPrototypeOf(ConJSave)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (ConJSave.__proto__ || Object.getPrototypeOf(ConJSave)).call(this));
 	  }
 
 	  _createClass(ConJSave, [{
