@@ -13,12 +13,18 @@
   },
   "homepage": "https://github.com/pdyxs/conjson",
   "files": [
-    "cj.js",
-    "ConJSON.js",
-    "ConJSave.js"
+    "lib"
   ],
-  "main": "cj.js",
+  "main": "lib/cj.js",
   "dependencies": {
     "underscore": "1.8.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0"
+  },
+  "scripts": {
+    "compile": "babel --presets es2015 -d lib/ src/",
+    "prepublish": "npm run compile"
   }
 }
