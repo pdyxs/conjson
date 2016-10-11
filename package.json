@@ -1,0 +1,24 @@
+{
+  "name": "conjson",
+  "version": "0.0.1",
+  "description": "Conjoined Front/Back end models via JSON",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pdyxs/conjson.git"
+  },
+  "author": "Paul Sztajer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pdyxs/conjson/issues"
+  },
+  "homepage": "https://github.com/pdyxs/conjson",
+  "files": [
+    "cj.js",
+    "ConJSON.js",
+    "ConJSave.js"
+  ],
+  "main": "cj.js",
+  "dependencies": {
+    "underscore": "1.8.3"
+  }
+}
