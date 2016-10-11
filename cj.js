@@ -56,7 +56,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.ConJSave = exports.default = undefined;
+	exports.ConJSave = exports.ConJSON = undefined;
 
 	var _ConJSON = __webpack_require__(2);
 
@@ -68,7 +68,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	exports.default = _ConJSON2.default;
+	exports.ConJSON = _ConJSON2.default;
 	exports.ConJSave = _ConJSave2.default;
 
 /***/ },
