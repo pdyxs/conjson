@@ -8,7 +8,9 @@ module.exports = {
     ],
     output: {
         path: './',
-        filename: 'cj.js'
+        filename: 'cj.js',
+        library: 'conjson', 
+        libraryTarget: 'umd'
     },
     module: {
         loaders: [{
@@ -16,5 +18,8 @@ module.exports = {
             loader: 'babel-loader',
             exclude: path.resolve(__dirname, 'node_modules')
         }]
+    },
+    node: {
+        global: false
     }
 };
