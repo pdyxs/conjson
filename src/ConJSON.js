@@ -205,9 +205,6 @@ class ConJSON {
         if (_.isFunction(this[id])) {
           this[id] = this[id].call(this);
         }
-        if (_(this[id].doPostLoad).isFunction()) {
-          this[id].doPostLoad();
-        }
       }
     }, this);
   }
