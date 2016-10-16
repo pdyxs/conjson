@@ -75,8 +75,12 @@ class ConJSON {
 
   _addObjectAttr(attr, obj, id) {
     if (!(obj instanceof this.spec[attr].cls)) {
+      if (obj && obj.id) {
+        obj = ConJSON.create(this, this.spec[attr], obj || {}, obj.id);
+      } else {
+        obj = ConJSON.create(this, this.spec[attr], obj || {});
+      }
       //it's a json loaded thing!
-      obj = ConJSON.create(this, this.spec[attr], obj || {}, obj.id);
       id = obj.id;
     } else if (!id) {
       id = obj.id;
